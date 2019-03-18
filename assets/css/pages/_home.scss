@@ -1,3 +1,18 @@
-@import "../libs/variables";
-@import "../libs/mixins";
+body{
+  font-family: Arial;
+  font-size: 16px;
+}
 
+.page-wrapper{
+  max-width: 1024px;
+  margin: 0 auto;
+  background:
+    url('../images/clouds-top.png') no-repeat 50% 0%,
+    url('../images/clouds-bottom.png') no-repeat 50% 100%,
+    linear-gradient(
+      to bottom,
+      $color-main,
+      $color-white 39%,
+      $color-white 93%,
+      $color-main);
+}
