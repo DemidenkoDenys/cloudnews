@@ -1,0 +1,12 @@
+.idea/
+.log
+directory/
+sources/
+logs/
+gulp/
+.htaccess
+/node_modules/
+README.md
+/yarn.lock
+/pages.json
+assets/img-old
