@@ -28,7 +28,7 @@ $global-margin: 1rem;
 $global-padding: 1rem;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
-$global-radius: 0;
+$global-radius: 10px;
 $global-text-direction: ltr;
 $global-flexbox: true;
 $print-transparent-backgrounds: true;
@@ -134,25 +134,27 @@ $stat-font-size: 2.5rem;
 
 // 6. Button
 // ----------
-$button-padding: 0.85em 1em;
-$button-margin: 0 0 $global-margin 0;
+$button-padding: 0;
+$button-margin: 0;
 $button-fill: solid;
 $button-background: $primary-color;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $white;
 $button-color-alt: $black;
-$button-radius: $global-radius;
+$button-radius: 0;
+$button-font: 0.9rem;
 $button-sizes: (
-  tiny: 0.6rem,
+  tiny: 0.5rem,
   small: 0.75rem,
   default: 0.9rem,
   large: 1.25rem,
 );
 $button-opacity-disabled: 0.25;
-$button-background-hover-lightness: -20%;
+$button-background-hover-lightness: 0%;
 $button-hollow-hover-lightness: -50%;
+$button-color-hover: scale-color($light-gray, $lightness: -5%);
 
-// 7. Forms
+// 7. Formss
 // ---------
 $form-spacing: rem-calc(16);
 $input-prefix-color: $black;
@@ -167,21 +169,20 @@ $select-background: $white;
 $select-triangle-color: $dark-gray;
 $select-radius: $global-radius;
 $input-color: $black;
-$input-placeholder-color: $medium-gray;
+$input-placeholder-color: scale-color($light-gray, $lightness: -5%);
 $input-font-family: inherit;
 $input-font-size: rem-calc(16);
 $input-background: $white;
 $input-background-focus: $white;
 $input-background-disabled: $light-gray;
-$input-border: 1px solid $medium-gray;
-$input-border-focus: 1px solid $dark-gray;
+$input-border: none;
+$input-border-focus: none;
 $input-shadow: inset 0 1px 2px rgba($black, 0.1);
 $input-shadow-focus: 0 0 5px $medium-gray;
 $input-cursor-disabled: not-allowed;
 $input-transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
 $input-number-spinners: true;
 $input-radius: $global-radius;
-$button-radius: $global-radius;
 
 // 8. Table
 // ---------
@@ -201,3 +202,28 @@ $table-foot-row-hover: darken($table-foot-background, $table-hover-scale);
 $table-head-font-color: $body-font-color;
 $table-foot-font-color: $body-font-color;
 $show-header-for-stacked: false;
+
+// 9. Pagination
+// -------------
+
+$pagination-font-size: rem-calc(14) !default;
+$pagination-margin-bottom: 0 !default;
+$pagination-item-color: $white !default;
+$pagination-item-padding: rem-calc(3 10) !default;
+$pagination-item-spacing: rem-calc(1) !default;
+$pagination-radius: 0 !default;
+$pagination-item-background-hover: $primary-color !default;
+$pagination-item-background-current: $primary-color !default;
+$pagination-item-color-current: $white !default;
+$pagination-item-color-disabled: $medium-gray !default;
+$pagination-ellipsis-color: $black !default;
+$pagination-mobile-items: false !default;
+$pagination-mobile-current-item: false !default;
+$pagination-arrows: true !default;
+
+// custom variables
+$pagination-item-size: 28px;
+$pagination-next-symbol: '';
+$pagination-prev-symbol: '';
+$pagination-ellipsis-symbol: '';
+

@@ -98,7 +98,7 @@
                         </ul>
                     </nav>
                     <div class="menu-category"> <span>Категории:</span>
-                        <ul>
+                        <ul class="secondary-menu-style">
                             <li><a href="#">Культура</a>
 
                             </li>
@@ -139,7 +139,7 @@
                     </div>
                 </section>
             </header>
-            <main class="content row" role="main">
+            <main class="main-content row" role="main">
                 <div class="articles columns small-6">
                     <article class="section-white articles-gallery">
                         <header>
@@ -151,47 +151,49 @@
                                 углу улиц Ермошкина и Дахадаева, в нескольких сотнях метров от центральной
                                 площади города, второй - через 15-17 минут в этом же районе. По словам
                                 источника в УВД города, по предварительным данным, оба взрывных устройства
-                                были заложены под припаркованными автомобилями. Пострадавших возросло до
-                                21 человека</figcaption>
+                                были заложены под припаркованными автомобилями. <u>Пострадавших возросло до 21 человека.</u>
+                            </figcaption>
                         </figure>
                         <footer>
-                            <ul>
-                                <li><a href="#">1</a>
+                            <nav aria-label="Pagination">
+                                <ul class="pagination">
+                                    <li><a href="#" aria-label="Page 1">1</a>
 
-                                </li>
-                                <li><a href="#">2</a>
+                                    </li>
+                                    <li><a href="#" aria-label="Page 2">2</a>
 
-                                </li>
-                                <li><a href="#">3</a>
+                                    </li>
+                                    <li><a href="#" aria-label="Page 3">3</a>
 
-                                </li>
-                                <li><a href="#">4</a>
+                                    </li>
+                                    <li><a href="#" aria-label="Page 4">4</a>
 
-                                </li>
-                                <li><a href="#">5</a>
+                                    </li>
+                                    <li><a href="#" aria-label="Page 5">5</a>
 
-                                </li>
-                                <li><a href="#">6</a>
+                                    </li>
+                                    <li><a href="#" aria-label="Page 6">6</a>
 
-                                </li>
-                                <li><a href="#">7</a>
+                                    </li>
+                                    <li><a href="#" aria-label="Page 7">7</a>
 
-                                </li>
-                                <li><a href="#">8</a>
+                                    </li>
+                                    <li><a href="#" aria-label="Page 8">8</a>
 
-                                </li>
-                                <li><a href="#">9</a>
+                                    </li>
+                                    <li><a href="#" aria-label="Page 9">9</a>
 
-                                </li>
-                                <li><a href="#">10</a>
+                                    </li>
+                                    <li><a href="#" aria-label="Page 10">10</a>
 
-                                </li>
-                            </ul> <a href="#">Полная новость</a>
+                                    </li>
+                                </ul> <a class="button secondary tiny underline float-right" href="#">Полная новость</a>
+                            </nav>
                         </footer>
                     </article>
-                    <section class="main-search">
+                    <section class="articles-search">
                         <form action="">
-                            <fieldset>
+                            <fieldset class="secondary-menu-style">
                                 <input type="checkbox" id="site-search-1" name="site-search">
                                 <label for="site-search-1">Популярные статьи</label>
                                 <input type="checkbox" id="site-search-2" name="site-search">
@@ -203,9 +205,11 @@
                                 <label for="site-search-4">Расширенный поиск</label>
                             </fieldset>
                             <fieldset class="input-group">
-                                <input class="input-group-field" type="text">
+                                <input class="input-group-field" type="text" placeholder="Введите текст для поиска по сайту..."
+                                />
                                 <div class="input-group-button">
-                                    <button type="submit" class="button" value="Submit"><i class="fi-list"></i>wdwd</button>
+                                    <button class="articles-search-button button tiny" type="submit" value="Submit">
+                                        <img class="loupe" src="../images/loupe.png" alt="">Поиск</button>
                                 </div>
                             </fieldset>
                         </form>
@@ -320,7 +324,7 @@
                         </section>
                         <nav aria-label="Pagination">
                             <ul class="pagination text-center">
-                                <li class="pagination-previous"><a href="#" aria-label="Prev page">Назад</a>
+                                <li class="pagination-prev"><a href="#" aria-label="Prev page">Назад</a>
 
                                 </li>
                                 <li><a href="#" aria-label="Page 1">1</a>
@@ -572,8 +576,8 @@
                     </section>
                 </aside>
                 <aside class="widgets columns small-3">
-                    <section class="widget important-info">
-                         <h4>Важная информация</h4>
+                    <section class="widget section-white important-info">
+                         <h4 class="grey-header text-center underline"><a href="#">Важная информация</a></h4>
                         <p><a href="#">ПОГОДА В МОСКВА</a>
 
                         </p>
@@ -587,8 +591,8 @@
                             <li>JPY 36.9094</li>
                         </ul>
                     </section>
-                    <section class="widget calendar">
-                         <h4>Календарь</h4>
+                    <section class="widget section-white calendar">
+                         <h4 class="grey-header text-center underline"><a href="#">Календарь</a></h4>
                         <div class="calendar-wrapper">
                             <p><a href="#"><< Сентябрь >></a>
 
@@ -636,8 +640,8 @@
                             </ul>
                         </div>
                     </section>
-                    <section class="widget tags">
-                         <h4>Опрос сайте</h4>
+                    <section class="widget section-white quiz">
+                         <h4 class="blue-header text-center underline"><a href="#">Опрос сайте</a></h4>
                         <p>Насколько Вас устраивает спектр предоставляемого сервиса на нашем сайте?</p>
                         <form
                         action="">
@@ -661,12 +665,12 @@
                             </fieldset>
                             </form>
                     </section>
-                    <section class="widget empty">
-                         <h4>Пустой блок</h4>
+                    <section class="widget section-gradient">
+                         <h4 class="blue-header text-center underline"><a href="#">Пустой блок</a></h4>
                         <p>Пустой блок. Сюда можно поставить модуль, текст, рекламу и т.п.</p>
                     </section>
-                    <section class="widget advertising">
-                         <h4>Реклама на сайте</h4>
+                    <section class="widget section-gradient advertising">
+                         <h4 class="blue-header text-center underline"><a href="#">Реклама на сайте</a></h4>
                         <figure>
                             <img src="../images/ad-1.jpg" alt="">
                         </figure>
@@ -712,7 +716,7 @@
                     </ul> <a href="#"><img src="../images/arrow-right.png" alt=""></a>
                 </div>
                 <nav class="columns small-12">
-                    <ul>
+                    <ul class="secondary-menu-style">
                         <li><a href="#">Главная</a>
 
                         </li>

@@ -1,10 +1,15 @@
+// @import "fonts";
+
 @import "foundation/foundation";
+
 @import "libs/variables";
 @import "libs/mixins";
-@import "libs/fonts";
+
 @import "components/header";
 @import "components/navigation";
 @import "components/section";
 @import "components/footer";
+@import "components/articles";
+
 @import "pages/global";
 @import "pages/home";

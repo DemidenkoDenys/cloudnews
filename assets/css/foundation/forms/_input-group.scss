@@ -4,7 +4,10 @@
   .input-group {
     display: if($global-flexbox, flex, table);
     width: 100%;
-    margin-bottom: $form-spacing;
+
+    & + .input-group{
+      margin-bottom: $form-spacing;
+    }
 
     @if $global-flexbox {
       align-items: stretch;

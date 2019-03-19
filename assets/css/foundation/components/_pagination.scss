@@ -1,0 +1,137 @@
+
+@mixin pagination-container (
+  $margin-bottom: $pagination-margin-bottom,
+  $font-size: $pagination-font-size,
+  $spacing: $pagination-item-spacing,
+  $radius: $pagination-radius,
+  $color: $pagination-item-color,
+  $padding: $pagination-item-padding,
+  $background-hover: $pagination-item-background-hover
+) {
+  @include clearfix;
+  margin-#{$global-left}: 0;
+  margin-bottom: $margin-bottom;
+
+  // List item
+  li {
+    @if $pagination-item-size { width: $pagination-item-size; }
+    @if $pagination-item-size { height: $pagination-item-size; }
+    text-align: center;
+    background: $background-hover;
+    margin-#{$global-right}: $spacing;
+    border-radius: $radius;
+    font-size: $font-size;
+
+    @if $pagination-mobile-items {
+      display: inline-block;
+    }
+    @else {
+      display: none;
+
+      &.pagination-previous,
+      &.pagination-prev,
+      &.pagination-next {
+        display: inline-block;
+        width: auto;
+        padding: 0 $padding;
+      }
+
+      @if $pagination-mobile-current-item {
+        &.current {
+          display: inline-block;
+        }
+      }
+
+      @include breakpoint(medium) {
+        display: inline-block;
+      }
+    }
+  }
+
+  // Page links
+  a,
+  button {
+    display: block;
+    border-radius: $radius;
+    color: $color;
+    @if $pagination-item-size { line-height: $pagination-item-size; }
+    // padding: $padding;
+
+    &:hover {
+      background: $background-hover;
+    }
+  }
+}
+
+/// Adds styles for the current pagination item. Apply this to an `<a>`.
+@mixin pagination-item-current (
+  $padding: $pagination-item-padding,
+  $background-current: $pagination-item-background-current,
+  $color-current: $pagination-item-color-current
+) {
+  padding: $padding;
+  background: $background-current;
+  color: $color-current;
+  cursor: default;
+}
+
+/// Adds styles for a disabled pagination item. Apply this to an `<a>`.
+@mixin pagination-item-disabled (
+  $padding: $pagination-item-padding,
+  $color: $pagination-item-color-disabled
+) {
+  padding: $padding;
+  color: $color;
+  cursor: not-allowed;
+
+  &:hover {
+    background: transparent;
+  }
+}
+
+/// Adds styles for an ellipsis for use in a pagination list.
+@mixin pagination-ellipsis (
+  $padding: $pagination-item-padding,
+  $color: $pagination-ellipsis-color
+) {
+  padding: $padding;
+  @if variable-exists(pagination-ellipsis-symbol) and 
+      $pagination-ellipsis-symbol != '' { content: $pagination-ellipsis-symbol; }
+  @else { content: none; }
+  color: $color;
+}
+
+@mixin foundation-pagination {
+  .pagination {
+    @include pagination-container;
+    .current {
+      @include pagination-item-current;
+    }
+    .disabled {
+      @include pagination-item-disabled;
+    }
+    .ellipsis::after {
+      @include pagination-ellipsis;
+    }
+  }
+
+  @if $pagination-arrows {
+    .pagination-previous a::before,
+    .pagination-previous.disabled::before {
+      display: inline-block;
+      margin-#{$global-right}: 0.5rem;
+      @if variable-exists(pagination-prev-symbol) and 
+          $pagination-prev-symbol != '' { content: $pagination-prev-symbol; }
+      @else { content: none; }
+    }
+
+    .pagination-next a::after,
+    .pagination-next.disabled::after {
+      display: inline-block;
+      margin-#{$global-left}: 0.5rem;
+      @if variable-exists(pagination-next-symbol) and 
+          $pagination-next-symbol != '' { content: $pagination-next-symbol; }
+      @else { content: none; }
+    }
+  }
+}

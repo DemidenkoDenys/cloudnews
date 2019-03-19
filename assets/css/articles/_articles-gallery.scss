@@ -1,0 +1,17 @@
+.articles-gallery {
+  figure {
+    font-size: 11px;
+    margin-bottom: 5px;
+    color: $secondary-color;
+
+    img {
+      float: left;
+      margin-right: 8px;
+    }
+  }
+
+  .pagination {
+    display: inline-block;
+    width: auto;
+  }
+}

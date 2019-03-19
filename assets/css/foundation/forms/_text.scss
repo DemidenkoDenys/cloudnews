@@ -50,10 +50,10 @@
 
   input,
   textarea {
-    &::-webkit-input-placeholder       {opacity: 1; color: $black;}
-    &::-moz-placeholder                {opacity: 1; color: $black;}
-    &:-moz-placeholder                 {opacity: 1; color: $black;}
-    &:-ms-input-placeholder            {opacity: 1; color: $black;}
+    &::-webkit-input-placeholder       {opacity: 1; color: $input-placeholder-color;}
+    &::-moz-placeholder                {opacity: 1; color: $input-placeholder-color;}
+    &:-moz-placeholder                 {opacity: 1; color: $input-placeholder-color;}
+    &:-ms-input-placeholder            {opacity: 1; color: $input-placeholder-color;}
 
     &.wpcf7-not-valid{
       &::-webkit-input-placeholder       {opacity: 1; color: $white;}

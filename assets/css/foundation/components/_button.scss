@@ -10,12 +10,16 @@
   cursor: pointer;
   -webkit-appearance: none;
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
-  vertical-align: middle;
+  vertical-align: top;
   border: 1px solid transparent;
   border-radius: $button-radius;
-  padding: $button-padding;
   margin: $button-margin;
-  font-size: map-get($button-sizes, default);
+  font-size: $button-font;
+
+  // original styles
+  // ---------------
+  // padding: $button-padding;
+  // font-size: map-get($button-sizes, default);
 }
 
 @mixin button-expand($expand: true) {
@@ -36,6 +40,7 @@
   $background: $button-background,
   $background-hover: $button-background-hover,
   $color: $button-color,
+  $color-hover: $button-color-hover,
   $background-hover-lightness: $button-background-hover-lightness
 ) {
   @if $color == auto {
@@ -51,7 +56,7 @@
 
   &:hover, &:focus {
     background-color: $background-hover;
-    color: $color;
+    color: $color-hover;
   }
 }
 
@@ -130,7 +135,7 @@
 
     @each $size, $value in map-remove($button-sizes, default) {
       &.#{$size} {
-        font-size: $value;
+        padding: $value 1rem;
       }
     }
 

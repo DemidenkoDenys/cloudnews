@@ -28,20 +28,12 @@
 
   &-category{
     display: flex;
-    color: $secondary-color;
     padding: 5px;
+    color: $secondary-color;
 
     & > ul{
       flex-grow: 1;
-      display: flex;
-      justify-content: space-between;
       margin-left: 5px;
-      li{
-        text-decoration: underline;
-        a{
-          color: $secondary-color;
-        }
-      }
     }
   }
 }

@@ -16,3 +16,12 @@ body{
       $white 93%,
       $primary-color);
 }
+
+.main-content{
+  & > *{
+    &:not(:first-child):not(:last-child){ padding: 0 4px; }
+    &:first-child{ padding-right: 4px; }
+    &:last-child{ padding-left: 4px; }
+  }
+
+}

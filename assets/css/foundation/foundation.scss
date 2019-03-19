@@ -13,14 +13,17 @@
 @import 'typography/typography';
 @import 'forms/forms';
 @import 'components/button';
+// @import 'components/icons';
 @import 'components/flex';
 @import 'components/table';
+@import 'components/pagination';
 
 @mixin foundation-everything() {
   @include foundation-global-styles;
   @include foundation-flex-grid;
   @include foundation-typography;
   @include foundation-forms;
+  @include foundation-pagination;
   @include foundation-button;
   @include foundation-table;
   @include foundation-flex-classes;
