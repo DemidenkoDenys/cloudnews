@@ -82,8 +82,8 @@
     line-height: inherit;
     cursor: pointer;
 
-    &:hover,
-    &:focus {
+    &:not(.no-highlight):hover,
+    &:not(.no-highlight):focus {
       color: $anchor-color-hover;
       @if $anchor-text-decoration-hover != $anchor-text-decoration {
         text-decoration: $anchor-text-decoration-hover;

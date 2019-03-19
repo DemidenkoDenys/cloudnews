@@ -1,7 +1,21 @@
 <nav class="menu-main">
   <ul>
     <li><a href="#">Главная</a></li>
-    <li><a href="#">Новости</a></li>
+    <li class="active">
+      <a href="#">Новости</a>
+      <ul class="submenu">
+        <li>
+          <a href="#">НАНО-Технологии</a>
+          <ul class="subsubmenu">
+            <li><a href="#">Политика</a></li>
+            <li><a href="#">Экономика</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Проишествия</a></li>
+        <li><a href="#">Наука</a></li>
+        <li><a href="#">Образование</a></li>
+      </ul>
+    </li>
     <li><a href="#">Комментари</a></li>
     <li><a href="#">Статистика</a></li>
     <li><a href="#">Наш форум</a></li>
@@ -13,9 +27,9 @@
   </ul>
 </nav>
 
-<div>
-  <h3>Категории:</h3>
-  <ul class="menu-category">
+<div class="menu-category">
+  <span>Категории:</span>
+  <ul>
     <li><a href="#">Культура</a></li>
     <li><a href="#">Искуство</a></li>
     <li><a href="#">Регионы</a></li>

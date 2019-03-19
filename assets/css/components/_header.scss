@@ -1,3 +1,15 @@
-#main-header{
-
+.main-header{
+  color: $white;
 }
+
+.header{
+  &-logo{
+    h1{
+      display: inline-block;
+      font-size: 1rem;
+      margin-top: 5px;
+      margin-left: 20px;
+    }
+  }
+}
+

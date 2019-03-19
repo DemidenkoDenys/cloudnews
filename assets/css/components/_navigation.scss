@@ -1,0 +1,47 @@
+.main-navigation{
+  margin-top: 25px;
+}
+
+.menu{
+  &-upper{
+    font-size: .857rem;
+    text-align: right;
+    li{ margin: 5px; }
+  }
+
+  &-main{
+    font-size: 13px;
+    padding: 5px 10px;
+    border: 2px solid $white;
+    border-radius: 10px;
+    background: $primary-color;
+
+    & > ul{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .submenu{
+      display: none;
+    }
+  }
+
+  &-category{
+    display: flex;
+    color: $secondary-color;
+    padding: 5px;
+
+    & > ul{
+      flex-grow: 1;
+      display: flex;
+      justify-content: space-between;
+      margin-left: 5px;
+      li{
+        text-decoration: underline;
+        a{
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}

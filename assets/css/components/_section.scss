@@ -1,0 +1,29 @@
+article[class*=section-],
+section[class*=section-]{
+  border-radius: 10px;
+  padding: 7px;
+
+  h2, h3, h4{
+    width: 100%;
+    padding: 7px 10px;
+    font-size: 13px;
+    color: $white;
+
+    &.grey-header{
+      background: $secondary-color;
+    }
+    &.blue-header{
+      background: $primary-color;
+    }
+  }
+  
+}
+
+.section{
+  &-white{
+    background: $white;
+  }
+  &-gradient{
+    background: linear-gradient(to bottom, scale-color($primary-color, $lightness: 70%), $white);
+  }
+}

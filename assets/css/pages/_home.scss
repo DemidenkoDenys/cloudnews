@@ -1,6 +1,6 @@
 body{
   font-family: Arial;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .page-wrapper{
@@ -11,8 +11,8 @@ body{
     url('../images/clouds-bottom.png') no-repeat 50% 100%,
     linear-gradient(
       to bottom,
-      $color-main,
-      $color-white 39%,
-      $color-white 93%,
-      $color-main);
+      $primary-color,
+      $white 39%,
+      $white 93%,
+      $primary-color);
 }

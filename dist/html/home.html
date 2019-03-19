@@ -19,17 +19,17 @@
     
     <body>
         <div class="page-wrapper">
-            <header class="row">
-                <div class="columns small-6">
+            <header class="main-header row">
+                <div class="header-logo columns small-6">
                      <h1>
-      <a href="#">
-        <span>первый новостной источник</span>
-        <img src="../images/cloudnews-logo.png" alt="logo of cloudnews" />
+      <a href="#" class="no-highlight">
+        <span>первый новостной источник</span><br>
+        <img src="../images/cloudnews-logo.png" alt="Cloudnews logo" />
       </a>
     </h1>
 
                 </div>
-                <div class="columns small-6">
+                <div class="menu-upper columns small-6">
                     <ul>
                         <li><a href="#">Сделать стартовой</a>
 
@@ -48,8 +48,28 @@
                             <li><a href="#">Главная</a>
 
                             </li>
-                            <li><a href="#">Новости</a>
+                            <li class="active"> <a href="#">Новости</a>
+                                <ul class="submenu">
+                                    <li> <a href="#">НАНО-Технологии</a>
+                                        <ul class="subsubmenu">
+                                            <li><a href="#">Политика</a>
 
+                                            </li>
+                                            <li><a href="#">Экономика</a>
+
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Проишествия</a>
+
+                                    </li>
+                                    <li><a href="#">Наука</a>
+
+                                    </li>
+                                    <li><a href="#">Образование</a>
+
+                                    </li>
+                                </ul>
                             </li>
                             <li><a href="#">Комментари</a>
 
@@ -77,9 +97,8 @@
                             </li>
                         </ul>
                     </nav>
-                    <div>
-                         <h3>Категории:</h3>
-                        <ul class="menu-category">
+                    <div class="menu-category"> <span>Категории:</span>
+                        <ul>
                             <li><a href="#">Культура</a>
 
                             </li>
@@ -122,9 +141,9 @@
             </header>
             <main class="content row" role="main">
                 <div class="articles columns small-6">
-                    <article class="articles-gallery">
+                    <article class="section-white articles-gallery">
                         <header>
-                             <h2>Число пострадавших при взрывах в Махачкале возросло до 21 человека</h2>
+                             <h2 class="grey-header">Число пострадавших при взрывах в Махачкале возросло до 21 человека</h2>
                         </header>
                         <figure>
                             <img src="../images/main-new-pic.jpg" alt="">
@@ -191,8 +210,8 @@
                             </fieldset>
                         </form>
                     </section>
-                    <section class="articles-list">
-                         <h2><time>23.09.2011</time> - Новости - Политика, Экономика, Культура</h2>
+                    <section class="articles-list section-white">
+                         <h2 class="grey-header"><time>23.09.2011</time> - Новости - Политика, Экономика, Культура</h2>
                         <ul>
                             <li> <a href="#">Ротация в президиуме генсовета ЕР была ожидаемой, считают политологи</a>
                                 <figure>
@@ -263,8 +282,8 @@
                             </li>
                         </ul>
                         </scetion>
-                        <section class="articles-today">
-                             <h2><time>23.09.2011</time> - Все новости текущего дня</h2>
+                        <section class="section-white articles-today">
+                             <h2 class="grey-header"><time>23.09.2011</time> - Все новости текущего дня</h2>
                             <article>
                                 <header>
                                      <h3><a href="#">Малафеев не сыграет за ФК "Зенит" в матче ЧР с "Томью"</a></h3>
@@ -341,8 +360,8 @@
                         </nav>
                 </div>
                 <aside class="widgets columns small-3">
-                    <section class="widget top-10">
-                         <h4>Последние новости ТОП 10</h4>
+                    <section class="section-white widget top-10">
+                         <h4 class="blue-header text-center underline"><a href="#">Последние новости ТОП 10</a></h4>
                         <ul>
                             <li>
                                 <figure>
@@ -427,8 +446,8 @@
 
                         </p>
                     </section>
-                    <section class="widget video-archive">
-                         <h4>Популярное из видеоархива</h4>
+                    <section class="widget section-white video-archive">
+                         <h4 class="blue-header text-center underline"><a href="#">Популярное из видеоархива</a></h4>
                         <ul>
                             <li><a href="#"><img src="../images/video-1.jpg" alt=""></a>
 
@@ -453,8 +472,8 @@
 
                         </p>
                     </section>
-                    <section class="widget tags">
-                         <h4>Облако тегов</h4>
+                    <section class="section-gradient widget tags">
+                         <h4 class="blue-header text-center underline"><a href="#">Облако тегов</a></h4> 
                         <ul>
                             <li><a href="#">Лебедев</a>
 
@@ -515,8 +534,8 @@
 
                         </p>
                     </section>
-                    <section class="widget tags">
-                         <h4>Архив новостей</h4>
+                    <section class="section-gradient widget archive">
+                         <h4 class="blue-header text-center underline"><a href="#">Архив новостей</a></h4> 
                         <ul>
                             <li><a href="#">Сентябрь 2011 (<span>1608</span>)</a>
 
@@ -546,6 +565,10 @@
                         <p><a href="#">Показать весь список</a>
 
                         </p>
+                    </section>
+                    <section class="section-gradient widget video-popular">
+                         <h4 class="blue-header text-center underline"><a href="#">Популярное из видеоархива</a></h4> 
+                        <p>Пустой блок. Сюда можно поставить модуль, текст, рекламу и т.п.</p>
                     </section>
                 </aside>
                 <aside class="widgets columns small-3">
