@@ -1,0 +1,41 @@
+.articles-list{
+  &.section-white{
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  &-items{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 11px;
+    line-height: 1rem;
+  
+    li{
+      width: 50%;
+      margin-bottom: 10px;
+      &:nth-child(odd){
+        padding-right: 5px;
+      }
+      &:nth-child(even){
+        padding-left: 5px;
+      }
+    }
+  
+    img{
+      float: left;
+      margin-right: 5px;
+    }
+  
+    a{
+      display: inline-block;
+      padding-bottom: 5px;
+      @include link-style();
+    }
+  }
+
+  &-menu{
+    li:first-child a{
+      padding-left: 0;
+    }
+  }
+}

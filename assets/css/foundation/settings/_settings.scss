@@ -16,10 +16,14 @@ $primary-color: #609cff;
 $second-color: #676370;
 $secondary-color: #676370;
 $light-gray: #e6e6e6;
+$light-grey: #e6e6e6;
 $medium-gray: #cacaca;
+$medium-grey: #cacaca;
 $dark-gray: #8a8a8a;
+$dark-grey: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
+$vinous: #5c2523;
 $body-background: $white;
 $body-font-color: $black;
 $body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
@@ -94,7 +98,8 @@ $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
 $anchor-color: $white;
-$anchor-color-hover: scale-color($light-gray, $lightness: -5%);
+$anchor-color-hover: $light-gray;
+$anchor-color-hover-lightness: -5%;
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $hr-width: $global-width;
@@ -141,6 +146,7 @@ $button-background: $primary-color;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $white;
 $button-color-alt: $black;
+$button-color-hover: scale-color($light-gray, $lightness: -5%);
 $button-radius: 0;
 $button-font: 0.9rem;
 $button-sizes: (
@@ -152,7 +158,6 @@ $button-sizes: (
 $button-opacity-disabled: 0.25;
 $button-background-hover-lightness: 0%;
 $button-hollow-hover-lightness: -50%;
-$button-color-hover: scale-color($light-gray, $lightness: -5%);
 
 // 7. Formss
 // ---------

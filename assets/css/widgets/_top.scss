@@ -1,0 +1,15 @@
+.top{
+  &-list{
+    &-item{
+      line-height: 1rem;
+    }
+    &-image{
+      float: left;
+      margin: 3px;
+      margin-right: 5px;
+    }
+    &-link:not(.no){
+      @include link-style();
+    }
+  }
+}

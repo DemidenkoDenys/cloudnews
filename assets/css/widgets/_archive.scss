@@ -1,0 +1,13 @@
+.archive{
+  &-list{
+    padding: 10px 10px 0;
+    li{
+      display: block;
+      line-height: 1.3rem;
+    }
+    a{
+      @include link-style('primary', 1rem);
+      
+    }
+  }
+}

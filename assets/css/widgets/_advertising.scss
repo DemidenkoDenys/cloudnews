@@ -1,0 +1,13 @@
+.advertising{
+  figure{
+    padding: 0 5px;
+
+    &:nth-of-type(2) img{
+      border: 2px solid $vinous;
+    }
+
+    img{
+      width: 100%;
+    }
+  }
+}

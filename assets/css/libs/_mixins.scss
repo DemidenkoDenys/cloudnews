@@ -1,15 +1,21 @@
-@mixin ultra_thin() {
-  font-weight: 100;
+@mixin link-style($type: 'primary', $size: 12px, $underline: null){
+  $color: map-get($foundation-palette, $type);
+
+  color: $color;
+  font-size: $size;
+  @if variable-exists(underline) {
+    text-decoration: $underline;
+  }
+
+  &:hover, &:focus{
+    color: scale-color($color, $lightness: -25%);
+  }
 }
 
-@mixin thin() {
-  font-weight: 300;
-}
-
-@mixin regular() {
-  font-weight: 500;
-}
-
-@mixin bold() {
-  font-weight: 700;
+@mixin hide() {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
 }

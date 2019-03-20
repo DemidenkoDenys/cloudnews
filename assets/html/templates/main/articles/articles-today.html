@@ -1,10 +1,12 @@
 <section class="section-white articles-today">
-  <h2 class="grey-header"><time>23.09.2011</time> - Все новости текущего дня</h2>
+  <h2 class="grey-header">
+    <time>23.09.2011</time>
+    <span> - </span>
+    <a class="underline" href="#">Все новости текущего дня</a>
+  </h2>
 
   <article>
-    <header>
-      <h3><a href="#">Малафеев не сыграет за ФК "Зенит" в матче ЧР с "Томью"</a></h3>
-    </header>
+    <h3><a href="#">Малафеев не сыграет за ФК "Зенит" в матче ЧР с "Томью"</a></h3>
     <figure><img src="../images/all-new-1.jpg" alt="" /></figure>
     <p>
       "Вячеслав Малафеев сейчас чувствует боль, у него есть боязнь выходить на
@@ -18,14 +20,12 @@
       <span>Просмотров: 233</span>
       <span>Комментариев: 21</span>
       <span>В закладки</span>
-      <a href="#">Полная новость</a>
+      <a class="button tiny primary underline" href="#">Полная новость</a>
     </footer>
   </article>
 
   <article>
-    <header>
-      <h3><a href="#">Боксер Поветкин считает Лебедева фаворитом в бою с Джеймсом</a></h3>
-    </header>
+    <h3><a href="#">Боксер Поветкин считает Лебедева фаворитом в бою с Джеймсом</a></h3>
     <figure><img src="../images/all-new-2.jpg" alt="" /></figure>
     <p>
       Презентация боя Лебедев - Тони состоялась в пятницу в Москве. Поединок
@@ -37,7 +37,12 @@
       <span>Просмотров: 233</span>
       <span>Комментариев: 21</span>
       <span>В закладки</span>
-      <a href="#">Полная новость</a>
+      <a class="button tiny primary underline" href="#">Полная новость</a>
     </footer>
   </article>
+
+  <footer>
+    <partial src="main/articles/articles-pagination.html"></partial>
+  </footer>
+
 </section>

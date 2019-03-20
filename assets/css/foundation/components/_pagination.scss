@@ -33,7 +33,7 @@
       &.pagination-next {
         display: inline-block;
         width: auto;
-        padding: 0 $padding;
+        padding: 0 1rem;
       }
 
       @if $pagination-mobile-current-item {
