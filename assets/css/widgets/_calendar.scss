@@ -13,8 +13,14 @@
       }
     }
 
-    td:nth-child(n+6){
-      color: red;
+    td{
+      &:nth-child(n+6){
+        color: red;
+      }
+      &.today{
+        background: $secondary-color;
+        color: $white;
+      }
     }
   }
 }
