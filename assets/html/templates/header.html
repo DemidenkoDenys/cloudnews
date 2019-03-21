@@ -1,24 +1,16 @@
 <header class="main-header row">
 
   <div class="header-logo columns small-6">
-    <h1>
-      <a href="#" class="no-highlight">
-        <span>первый новостной источник</span><br>
-        <img src="../images/cloudnews-logo.png" alt="Cloudnews logo" />
-      </a>
-    </h1>
+    <partial src="header/logo.html"></partial>
   </div>
 
   <div class="menu-upper columns small-6">
-    <ul>
-      <li><a href="#">Сделать стартовой</a></li>
-      <li><a href="#">Добавить в закладки</a></li>
-      <li><a href="#">Панель управления</a></li>
-    </ul>
+    <partial src="header/top-menu.html"></partial>
   </div>
 
   <section class="main-navigation columns small-12">
-    <partial src="main/navigation.html"></partial>
+    <partial src="header/main-menu.html"></partial>
+    <partial src="header/secondary-menu.html"></partial>
   </section>
 
 </header>
