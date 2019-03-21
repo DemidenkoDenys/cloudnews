@@ -1,0 +1,20 @@
+.calendar{
+  &-table{
+    tbody{
+      background: url(../images/calendar-bg.png) no-repeat center center;
+    }
+
+    tr:first-child{
+      td{
+        text-align: center;
+        a{
+          color: $primary-color;
+        }
+      }
+    }
+
+    td:nth-child(n+6){
+      color: red;
+    }
+  }
+}

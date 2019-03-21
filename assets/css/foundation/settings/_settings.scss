@@ -7,7 +7,7 @@ $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #2199e8,
-  secondary: #777,
+  secondary: #676370,
   success: #3adb76,
   warning: #ffae00,
   alert: #ec5840,
@@ -89,7 +89,7 @@ $header-margin-bottom: 0.5rem;
 $header-text-rendering: optimizeLegibility;
 $header-small-font-color: $medium-gray;
 $paragraph-lineheight: 1.6;
-$paragraph-margin-bottom: 1rem;
+$paragraph-margin-bottom: 0;
 $paragraph-text-rendering: optimizeLegibility;
 $code-color: $black;
 $code-font-family: $body-font-family;
@@ -191,20 +191,21 @@ $input-radius: $global-radius;
 
 // 8. Table
 // ---------
-$table-background: $white;
+$table-color: $secondary-color;
+$table-background: transparent;
 $table-color-scale: 5%;
-$table-border: 1px solid smart-scale($table-background, $table-color-scale);
-$table-padding: rem-calc(8 10 10);
+$table-border: none;
+$table-padding: rem-calc(3 5);
 $table-hover-scale: 2%;
 $table-row-hover: darken($table-background, $table-hover-scale);
 $table-row-stripe-hover: darken($table-background, $table-color-scale + $table-hover-scale);
-$table-striped-background: smart-scale($table-background, $table-color-scale);
+$table-striped-background: transparent;
 $table-stripe: even;
-$table-head-background: smart-scale($table-background, $table-color-scale / 2);
+$table-head-background: transparent;
 $table-head-row-hover: darken($table-head-background, $table-hover-scale);
-$table-foot-background: smart-scale($table-background, $table-color-scale);
+$table-foot-background: transparent;
 $table-foot-row-hover: darken($table-foot-background, $table-hover-scale);
-$table-head-font-color: $body-font-color;
+$table-head-font-color: $secondary-color;
 $table-foot-font-color: $body-font-color;
 $show-header-for-stacked: false;
 

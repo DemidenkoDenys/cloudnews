@@ -1,0 +1,45 @@
+.important{
+
+  &-info{
+    .forecast-day{
+      color: $primary-color;
+      display: inline-flex;
+      width: 49%;
+      align-items: center;
+  
+      img{
+        width: 35px;
+        height: 35px;
+      }
+  
+      figcaption{
+        padding: 0 10px;
+        flex-grow: 1;
+      }
+  
+      p{
+        text-align: center;
+      }
+    }
+
+    footer{
+      background: $light-grey;
+    }
+  }
+
+  &-exchange-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 10px;
+
+    li{
+      width: 50%;
+      color: $primary-color;
+
+      &:nth-child(even){
+        text-align: right;
+      }
+    }
+  }
+
+}

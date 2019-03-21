@@ -1,4 +1,8 @@
 @mixin -zf-table-children-styles($stripe: $table-stripe) {
+  table{
+    color: $table-color;
+  }
+
   thead,
   tbody,
   tfoot {
@@ -30,7 +34,6 @@
     th,
     td {
       padding: $table-padding;
-      font-weight: $global-weight-bold;
       text-align: #{$global-left};
     }
   }
@@ -105,7 +108,7 @@
       }
     }
 
-    @elseif($table-stripe == odd) {
+    @else if($table-stripe == odd) {
       &:nth-of-type(odd):hover {
         background-color: $table-row-stripe-hover;
       }
