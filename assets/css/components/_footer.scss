@@ -1,3 +1,46 @@
-#main-footer{
+.footer {
+  &-menu {
+    margin-bottom: 50px;
+  }
 
+  &-designers {
+    h2{
+      display: inline-block;
+      text-align: right;
+      font-style: italic;
+      line-height: 1.5rem;
+  
+      a {
+        background: radial-gradient(ellipse 400px 20px at 40% 35%, $lightblue, $primary-color);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+  
+      span{
+        font-size: 16px;
+        color: $light-grey;
+      }
+    }
+  }
+
+  &-copyright *{
+    color: $secondary-color;
+    text-decoration: underline;
+  }
+
+  &-banners{
+    text-align: right;
+
+    span{
+      display: inline-block;
+      width: 88px;
+      height: 31px;
+      font-size: 11px;
+      line-height: 31px;
+      color: $secondary-color;
+      text-align: center;
+      background: $white;
+      border: 1px solid $primary-color;
+    }
+  }
 }
