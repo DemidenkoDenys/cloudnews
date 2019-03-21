@@ -1,0 +1,65 @@
+.quiz{
+
+  background: url(../images/quiz-bg.png) no-repeat center 50px;
+
+  & > p{
+    text-align: left;
+  }
+
+  &-form{
+    font-size: 11px;
+    padding-top: 10px;
+  }
+
+  &-questions{
+    background: rgba($primary-color, .6);
+
+    input{
+      @include hide();
+      &:checked + label:before{
+        border: double 3px $white;
+        background: $white;
+        background-clip: padding-box;
+      }
+    }
+
+    label{
+      margin: 0;
+      color: $white;
+      vertical-align: middle;
+
+      &:before{
+        content: '';
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border: 1px solid $white;
+        border-radius: 50%;
+        margin: 0 5px 1px 10px;
+        transform: scale(1.5);
+      }
+    }
+  }
+
+  &-controls{
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    button{
+      width: calc(50% - 4px);
+      margin: 2px;
+      padding: 7px 10px;
+      background: $secondary-color;
+      color: $white;
+      text-decoration: underline;
+
+      &:last-child{
+        width: 90%;
+        background: transparent;
+        color: $secondary-color;
+      }
+    }
+  }
+}

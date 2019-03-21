@@ -4,19 +4,21 @@
   
   <p>Насколько Вас устраивает спектр предоставляемого сервиса на нашем сайте?</p>
 
-  <form action="">
-    <fieldset>
-      <input type="radio" name="answers" id="answer-1" /><label for="answer-1">Всего хватает, не жалуюсь.</label>
-      <input type="radio" name="answers" id="answer-2" /><label for="answer-2">Спектр огромен, путаюсь постояно</label>
-      <input type="radio" name="answers" id="answer-3" /><label for="answer-3">Меня не устраивает.</label>
-      <input type="radio" name="answers" id="answer-4" /><label for="answer-4">Я ничего не понял!</label>
-    </fieldset>
-
-    <fieldset>
-      <button>Голосовать</button>
-      <button>Результаты</button>
-      <button>Все голосования</button>
-    </fieldset>
-  </form>
+  <div class="quiz-form">
+    <form action="">
+      <fieldset class="quiz-questions">
+        <input type="radio" name="answers" id="answer-1" checked/><label for="answer-1">Всего хватает, не жалуюсь.</label><br />
+        <input type="radio" name="answers" id="answer-2" /><label for="answer-2">Спектр огромен, путаюсь постояно</label><br />
+        <input type="radio" name="answers" id="answer-3" /><label for="answer-3">Меня не устраивает.</label><br />
+        <input type="radio" name="answers" id="answer-4" /><label for="answer-4">Я ничего не понял!</label><br />
+      </fieldset>
+  
+      <fieldset class="quiz-controls">
+        <button>Голосовать</button>
+        <button>Результаты</button>
+        <button>Все голосования</button>
+      </fieldset>
+    </form>
+  </div>
 
 </section>
