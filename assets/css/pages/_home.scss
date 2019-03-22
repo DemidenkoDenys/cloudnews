@@ -20,7 +20,10 @@ body{
 .main-content{
   & > *{
     &:not(:first-child):not(:last-child){ padding: 0 4px; }
-    &:first-child{ padding-right: 4px; }
+    &.articles{
+      flex-basis: 51%;
+      padding-right: 4px;
+    }
     &:last-child{ padding-left: 4px; }
   }
 
@@ -33,8 +36,19 @@ body{
 
 article[class*=section-],
 section[class*=section-]{
-  border-radius: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
   padding: 7px;
+
+  &[class*=white]{
+    background: $white;
+  }
+  &[class*=gradient]{
+    background: linear-gradient(to bottom, scale-color($primary-color, $lightness: 70%), $white);
+  }
+  &[class*=transparent]{
+    padding: 0;
+  }
 
   h2, h3, h4{
     width: 100%;
@@ -48,14 +62,5 @@ section[class*=section-]{
     &.blue-header{
       background: $primary-color;
     }
-  }
-}
-
-.section{
-  &-white{
-    background: $white;
-  }
-  &-gradient{
-    background: linear-gradient(to bottom, scale-color($primary-color, $lightness: 70%), $white);
   }
 }

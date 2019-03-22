@@ -1,7 +1,9 @@
 .articles-list{
+
   &.section-white{
     margin-bottom: 0;
     padding-bottom: 0;
+    padding-top: 8px;
   }
 
   &-items{
@@ -13,29 +15,54 @@
     li{
       width: 50%;
       margin-bottom: 10px;
+
       &:nth-child(odd){
         padding-right: 5px;
       }
+
       &:nth-child(even){
-        padding-left: 5px;
+        padding-left: 8px;
+        padding-right: 2px;
       }
+    }
+
+    figure{
+      margin-top: -1px;
     }
   
     img{
       float: left;
-      margin-right: 5px;
+      margin: 2px 5px -2px 0;
     }
   
     a{
       display: inline-block;
       padding-bottom: 5px;
-      @include link-style();
+      line-height: 16px;
+      @include link-style('primary', 13px, underline);
     }
   }
 
   &-menu{
-    li:first-child a{
-      padding-left: 0;
+    line-height: 1.2rem;
+
+    li{
+      [class*=footer] & a{
+        font-size: 12px;
+        letter-spacing: 0.2px;
+      }
+
+      a{
+        padding: 0 2px !important;
+      }
+
+      &:first-child a{
+        padding-left: 0 !important;
+      }
     }
   }
+
+  // for pixel-perfect only
+    h2{ margin-bottom: 0.65rem; }
+  // for pixel-perfect only
 }

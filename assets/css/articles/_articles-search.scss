@@ -1,12 +1,4 @@
 .articles-search{
-  &-button{
-    // padding-left: 5px !important;
-    font-size: 1rem;
-
-    img{
-      margin-right: 5px;
-    }
-  }
 
   &-menu{
     justify-content: flex-start !important;
@@ -14,8 +6,32 @@
     input + label{
       white-space: nowrap;
       font-size: 12px;
-      line-height: 2rem;
+      line-height: 1.9rem;
+      letter-spacing: .1px;
       padding: 0 8px;
+    }
+
+    // for pixel perfect only
+      label:first-of-type{
+        padding-left: 4px;
+      }
+    // for pixel perfect only
+  }
+
+  &-fields{
+    input{
+      font-size: 13px;
+      height: 2.1rem;
+      margin-bottom: 0;
+    }
+  }
+
+  &-button{
+    font-size: 1rem;
+    padding-left: 8px !important;
+
+    img{
+      margin: -3px 5px -2px 0;
     }
   }
 }
