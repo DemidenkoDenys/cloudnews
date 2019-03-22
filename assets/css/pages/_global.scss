@@ -29,11 +29,11 @@ figure{
 }
 .secondary-menu-style > li > a,
 .secondary-menu-style > label{
-  @include link-style('secondary', 12px, underline);
+  @include link-style('secondary', 13px, underline);
 }
 .primary-menu-style > li > a,
 .primary-menu-style > label{
-  @include link-style('primary', 12px, underline);
+  @include link-style('primary', 13px, underline);
 }
 
 .float-right{

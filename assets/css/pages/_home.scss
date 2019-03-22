@@ -24,4 +24,38 @@ body{
     &:last-child{ padding-left: 4px; }
   }
 
+  // --- for pixel-perfect only
+    aside:last-child{ flex: 0 0 24%; }
+    aside:not(:first-child):not(:last-child){ padding: 0 6px; }
+    div:first-child{ padding-right: 2px; }
+  // --- for pixel-perfect only
+}
+
+article[class*=section-],
+section[class*=section-]{
+  border-radius: 10px;
+  padding: 7px;
+
+  h2, h3, h4{
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 13px;
+    color: $white;
+
+    &.grey-header{
+      background: $secondary-color;
+    }
+    &.blue-header{
+      background: $primary-color;
+    }
+  }
+}
+
+.section{
+  &-white{
+    background: $white;
+  }
+  &-gradient{
+    background: linear-gradient(to bottom, scale-color($primary-color, $lightness: 70%), $white);
+  }
 }

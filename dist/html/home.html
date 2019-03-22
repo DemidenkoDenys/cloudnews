@@ -81,7 +81,7 @@
                             <li><a href="#">Статистика</a>
 
                             </li>
-                            <li class="active"><a href="#">Наш форум</a>
+                            <li><a href="#">Наш форум</a>
 
                             </li>
                             <li><a href="#">Модераторы</a>
@@ -197,7 +197,7 @@
                     </article>
                     <section class="articles-search">
                         <form action="">
-                            <fieldset class="secondary-menu-style">
+                            <div class="articles-search-menu secondary-menu-style">
                                 <input type="checkbox" id="site-search-1" name="site-search">
                                 <label for="site-search-1">Популярные статьи</label>
                                 <input type="checkbox" id="site-search-2" name="site-search">
@@ -207,15 +207,15 @@
                                 <input type="checkbox" id="site-search-4"
                                 name="site-search">
                                 <label for="site-search-4">Расширенный поиск</label>
-                            </fieldset>
-                            <fieldset class="input-group">
+                            </div>
+                            <div class="input-group">
                                 <input class="input-group-field" type="text" placeholder="Введите текст для поиска по сайту..."
                                 />
                                 <div class="input-group-button">
                                     <button class="articles-search-button button tiny" type="submit" value="Submit">
                                         <img class="loupe" src="../images/loupe.png" alt="">Поиск</button>
                                 </div>
-                            </fieldset>
+                            </div>
                         </form>
                     </section>
                     <section class="section-white articles-list">
@@ -331,7 +331,48 @@
                                 class="button tiny primary underline" href="#">Полная новость</a>
                             </footer>
                         </article>
-                        <footer></footer>
+                        <footer>
+                            <nav aria-label="Pagination">
+                                <ul class="pagination text-center">
+                                    <li class="pagination-prev"><a href="#" aria-label="Prev page">Назад</a>
+
+                                    </li>
+                                    <li><a href="#" aria-label="Page 1">1</a>
+
+                                    </li>
+                                    <li><a href="#" aria-label="Page 2">2</a>
+
+                                    </li>
+                                    <li><a href="#" aria-label="Page 3">3</a>
+
+                                    </li>
+                                    <li><a href="#" aria-label="Page 4">4</a>
+
+                                    </li>
+                                    <li><a href="#" aria-label="Page 5">5</a>
+
+                                    </li>
+                                    <li><a href="#" aria-label="Page 6">6</a>
+
+                                    </li>
+                                    <li><a href="#" aria-label="Page 7">7</a>
+
+                                    </li>
+                                    <li><a href="#" aria-label="Page 8">8</a>
+
+                                    </li>
+                                    <li><a href="#" aria-label="Page 9">9</a>
+
+                                    </li>
+                                    <li><a href="#" aria-label="Page 10">10</a>
+
+                                    </li>
+                                    <li class="pagination-next"><a href="#" aria-label="Next page">Далее</a>
+
+                                    </li>
+                                </ul>
+                            </nav>
+                        </footer>
                     </section>
                 </div>
                 <aside class="widgets columns small-3">
@@ -647,7 +688,7 @@
                         <div
                         class="quiz-form">
                             <form action="">
-                                <fieldset class="quiz-questions">
+                                <div class="quiz-questions">
                                     <input type="radio" name="answers" id="answer-1" checked/>
                                     <label for="answer-1">Всего хватает, не жалуюсь.</label>
                                     <br />
@@ -660,12 +701,12 @@
                                     <input type="radio" name="answers" id="answer-4" />
                                     <label for="answer-4">Я ничего не понял!</label>
                                     <br />
-                                </fieldset>
-                                <fieldset class="quiz-controls">
+                                </div>
+                                <div class="quiz-controls">
                                     <button>Голосовать</button>
                                     <button>Результаты</button>
                                     <button>Все голосования</button>
-                                </fieldset>
+                                </div>
                             </form>
         </div>
         </section>
@@ -676,10 +717,10 @@
         <section class="widget section-gradient advertising">
              <h4 class="blue-header text-center underline"><a href="#">Реклама на сайте</a></h4>
             <figure>
-                <img src="../images/ad-1.jpg" alt="">
+                <img src="../images/advertising-1.jpg" alt="" />
             </figure>
             <figure>
-                <img src="../images/ad-2.jpg" alt="">
+                <img src="../images/advertising-2.jpg" alt="" />
             </figure>
         </section>
         </aside>

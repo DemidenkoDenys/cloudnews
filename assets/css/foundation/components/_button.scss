@@ -131,6 +131,7 @@
 
 @mixin foundation-button {
   .button {
+    letter-spacing: .4px;
     @include button;
 
     @each $size, $value in map-remove($button-sizes, default) {

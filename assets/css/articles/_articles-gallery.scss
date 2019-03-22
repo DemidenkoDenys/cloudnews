@@ -11,5 +11,12 @@
   .pagination {
     display: inline-block;
     width: auto;
+    padding-left: 3px;
   }
+
+  // for pixel-perfect only
+    figure{ line-height: 1.22rem; }
+    h2{ margin-bottom: 3px; }
+    img{ margin-top: 5px; }
+  // for pixel-perfect only
 }
