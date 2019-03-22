@@ -1,13 +1,28 @@
 .archive{
+
+  margin-bottom: 11px !important;
+
+  h4{
+    margin-bottom: 0;
+  }
+
   &-list{
-    padding: 10px 10px 0;
+    padding: 10px 13px;
+
     li{
       display: block;
-      line-height: 1.3rem;
+      line-height: 1.25rem;
     }
+
     a{
-      @include link-style('primary', 1rem);
-      
+      @include link-style('primary', .95rem);
+    }
+  }
+
+  footer{
+    line-height: 10px;
+    a{
+      font-size: 13px !important;
     }
   }
 }

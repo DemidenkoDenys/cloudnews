@@ -1,6 +1,7 @@
 .footer {
   &-menu {
-    margin-bottom: 50px;
+    margin-bottom: 37px;
+    letter-spacing: -.3px;
   }
 
   &-designers {
@@ -8,7 +9,10 @@
       display: inline-block;
       text-align: right;
       font-style: italic;
-      line-height: 1.5rem;
+      font-size: 1.5rem;
+      line-height: 1rem;
+      margin-bottom: 0;
+      margin-left: 1rem;
   
       a {
         background: radial-gradient(ellipse 400px 20px at 40% 35%, $lightblue, $primary-color);
@@ -17,20 +21,25 @@
       }
   
       span{
-        font-size: 16px;
+        font-size: 11px;
         color: $light-grey;
       }
     }
   }
 
-  &-copyright *{
-    color: $secondary-color;
-    text-decoration: underline;
+  &-copyright{
+    font-size: 12.5px;
+    margin-bottom: 25px;
+    padding-top: 10px;
+    padding-right: 60px;
+
+    *{
+      color: $secondary-color;
+      text-decoration: underline;
+    }
   }
 
   &-banners{
-    text-align: right;
-
     span{
       display: inline-block;
       width: 88px;

@@ -1,10 +1,21 @@
 .calendar{
+  padding-top: 11px !important;
+  
   &-table{
+    font-size: 12px;
+    line-height: 1.35rem;
+    margin-bottom: 5px;
+
+    thead td{
+      text-align: center;
+    }
+
     tbody{
-      background: url(../images/calendar-bg.png) no-repeat center center;
+      background: url(../images/calendar-bg.png) no-repeat center -20px;
     }
 
     tr:first-child{
+      line-height: 1rem;
       td{
         text-align: center;
         a{

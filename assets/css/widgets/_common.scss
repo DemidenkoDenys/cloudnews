@@ -1,5 +1,5 @@
 .widget{
-  min-height: 200px;
+  min-height: 160px;
 
   & > p{
     text-align: center;
@@ -10,7 +10,7 @@
 
   footer{
     a:first-child{
-      @include link-style('secondary', 13px, underline);
+      @include link-style('secondary', 12px, underline);
     }
   }
 }

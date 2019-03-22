@@ -1,6 +1,14 @@
 .quiz{
+  background: white url(../images/quiz-bg.png) no-repeat center 50px !important;
+  margin-bottom: 0 !important;
 
-  background: url(../images/quiz-bg.png) no-repeat center 50px;
+  h4{
+    line-height: 1.5rem;
+
+    & + p{
+      font-size: 13px;
+    }
+  }
 
   & > p{
     text-align: left;
@@ -8,11 +16,15 @@
 
   &-form{
     font-size: 11px;
-    padding-top: 10px;
+    padding-top: .5rem;
   }
 
   &-questions{
-    background: rgba($primary-color, .6);
+    position: relative;
+    left: -7px;
+    padding: 6px 0;
+    width: calc(100% + 14px);
+    background: rgba($primary-color, .7);
 
     input{
       @include hide();
@@ -26,6 +38,7 @@
     label{
       margin: 0;
       color: $white;
+      line-height: 1.4rem;
       vertical-align: middle;
 
       &:before{
@@ -42,7 +55,7 @@
   }
 
   &-controls{
-    margin: 5px;
+    margin: 5px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -51,11 +64,13 @@
       width: calc(50% - 4px);
       margin: 2px;
       padding: 7px 10px;
+      font-size: 13px;
       background: $secondary-color;
       color: $white;
       text-decoration: underline;
 
       &:last-child{
+        padding: 0;
         width: 90%;
         background: transparent;
         color: $secondary-color;

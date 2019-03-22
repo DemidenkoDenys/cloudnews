@@ -1,15 +1,25 @@
 .top{
   &-list{
+
     &-item{
+      width: 100%;
       line-height: 1rem;
+      letter-spacing: .1px;
+      margin-bottom: 3px;
+
+      figure{
+        margin-left: -3px;
+      }
     }
+
     &-image{
       float: left;
       margin: 3px;
       margin-right: 5px;
     }
+
     &-link:not(.no){
-      @include link-style();
+      @include link-style('primary', 12px, underline);
     }
   }
 }

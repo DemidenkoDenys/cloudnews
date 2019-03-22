@@ -1,66 +1,70 @@
-body{
+body {
   font-family: Arial;
   font-size: 14px;
 }
 
-.page-wrapper{
+.page-wrapper {
   max-width: 1020px;
   margin: 0 auto;
-  background:
-    url('../images/clouds-top.png') no-repeat 50% 0%,
-    url('../images/clouds-bottom.png') no-repeat 50% 100%,
-    linear-gradient(
-      to bottom,
-      $primary-color,
-      $white 39%,
-      $white 93%,
-      $primary-color);
+  background: url('../images/clouds-top.png') no-repeat 50% 0%, url('../images/clouds-bottom.png') no-repeat 50% 100%, linear-gradient( to bottom, $primary-color, $white 39%, $white 93%, $primary-color);
 }
 
-.main-content{
-  & > *{
-    &:not(:first-child):not(:last-child){ padding: 0 4px; }
-    &.articles{
-      flex-basis: 51%;
-      padding-right: 4px;
+.main-content {
+  & > * {
+    &:not(:first-child):not(:last-child) {
+      padding: 0 6px;
     }
-    &:last-child{ padding-left: 4px; }
-  }
 
-  // --- for pixel-perfect only
-    aside:last-child{ flex: 0 0 24%; }
-    aside:not(:first-child):not(:last-child){ padding: 0 6px; }
-    div:first-child{ padding-right: 2px; }
-  // --- for pixel-perfect only
+    &.articles {
+      flex-basis: 51%;
+      padding-right: 2px;
+    }
+
+    &:last-child {
+      flex: 0 0 24%;
+      padding-left: 4px;
+    }
+  }
 }
 
 article[class*=section-],
-section[class*=section-]{
+section[class*=section-] {
   border-radius: 8px;
   margin-bottom: 8px;
   padding: 7px;
 
-  &[class*=white]{
+  &[class*=white] {
     background: $white;
   }
-  &[class*=gradient]{
+
+  &[class*=gradient] {
     background: linear-gradient(to bottom, scale-color($primary-color, $lightness: 70%), $white);
   }
-  &[class*=transparent]{
+
+  &[class*=transparent] {
     padding: 0;
   }
 
-  h2, h3, h4{
+  h2,
+  h3,
+  h4 {
     width: 100%;
     padding: 5px 10px;
     font-size: 13px;
     color: $white;
 
-    &.grey-header{
+    &.grey-header {
       background: $secondary-color;
     }
-    &.blue-header{
+
+    &.blue-header {
       background: $primary-color;
     }
+  }
+
+  &.widget h4 {
+    font-size: 12px;
+    padding: 6px 10px;
+    letter-spacing: .2px;
   }
 }

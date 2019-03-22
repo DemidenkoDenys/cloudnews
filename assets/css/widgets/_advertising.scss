@@ -1,6 +1,15 @@
 .advertising{
+
+  h4{
+    line-height: 1.5rem;
+  }
+
   figure{
     padding: 0 5px;
+
+    &:first-of-type img{
+      height: 295px;
+    }
 
     &:nth-of-type(2) img{
       border: 2px solid $vinous;
